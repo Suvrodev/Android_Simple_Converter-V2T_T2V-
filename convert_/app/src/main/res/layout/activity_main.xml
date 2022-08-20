@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text To Voice"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        android:background="@android:color/darker_gray"
+         />
+
+    <!--To add text in the app-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_edittext"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter Any Sentence"
+        android:gravity="center"
+        android:textSize="16dp"/>
+
+    <!--when you press this button it will
+        convert text into speech-->
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/id_ttv_btn"
+        android:layout_height="wrap_content"
+        android:text="Click Here"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/id_mic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="204dp"
+        android:src="@drawable/mic_icon"
+        android:layout_gravity="center"
+      />
+
+    <TextView
+        android:layout_margin="20sp"
+        android:id="@+id/id_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10sp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:text="Text"
+        android:background="#00E5FF"
+         />
+
+</LinearLayout>
